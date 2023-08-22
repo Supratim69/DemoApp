@@ -4,3 +4,17 @@ List<String> Questions = [
   "There is a cryptic secret hidden by the creators of this hunt and it is your job, intepid hunters, to hunt for them and decode what they mean! May the codes be with you.",
   "The user will be given an image of the game Pocket Tanks with written on it, with a link to an audio file. The user will have to shazam the song, which will give them the song '505' by Arctic Monkeys. The user will have to divide the number 505 by 5 which gives them 101. The image is a hint for the tank near SMV. The user will have to go to the room 101 in SMV and scan the QR code pasted there."
 ];
+
+var Solvers = [
+  ["ASYA", "Tara Maa"],
+  [],
+  ["ASYA", "Seekers", "Predators"],
+  ["ASYA", "Tara Maa", "Cryptics", "Seekers"]
+];
+
+// var solvers = {
+//   Questions[0]: ["ASYA", "Tara Maa"],
+//   Questions[1]: ["D3FY"],
+//   Questions[2]: ["ASYA", "Seekers", "Predators"],
+//   Questions[3]: ["ASYA", "Tara Maa", "Cryptics", "Seekers"],
+// };

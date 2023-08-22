@@ -13,7 +13,9 @@ class _QuestionScreenState extends State<QuestionScreen> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(primarySwatch: Colors.orange),
+      theme: ThemeData(
+          primarySwatch: Colors.orange,
+          scaffoldBackgroundColor: const Color.fromARGB(255, 254, 244, 234)),
       debugShowCheckedModeBanner: false,
       home: ChangeNotifierProvider(
         create: (context) => QuestionProvider(),
@@ -60,6 +62,9 @@ class _QuestionScreenState extends State<QuestionScreen> {
                                 "Question No.- ${QuestionProvider.currentIndex + 1}"),
                           ),
                         ),
+                        Padding(
+                            padding: const EdgeInsets.only(bottom: 20),
+                            child: QuestionProvider.firstBlood()),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
