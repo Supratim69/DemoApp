@@ -72,13 +72,17 @@ class _QuestionScreenState extends State<QuestionScreen> {
                                 onPressed: () =>
                                     QuestionProvider.previousQuestion(),
                                 child: Icon(Icons.arrow_back_ios)),
-                            SingleChildScrollView(
+                            Expanded(
                               child: SizedBox(
-                                height: 250,
-                                width: 250,
-                                child: Text(QuestionProvider.currentQuestion),
-                              ),
+                                  width: 240,
+                                  child:
+                                      Text(QuestionProvider.currentQuestion)),
                             ),
+                            // Container(
+                            //   width: 250,
+                            //   child: Text(QuestionProvider.currentQuestion),
+                            // ),
+
                             TextButton(
                                 onPressed: () =>
                                     QuestionProvider.nextQuestion(),
